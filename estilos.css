@@ -1,0 +1,120 @@
+/* Comienza estilo de la barra de navegación */
+body{
+    margin: 0;
+    
+    font-family: sans-serif;
+    background: rgb(241, 239, 239);
+}
+
+.titulo{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.titulo1{
+    font-size: 35px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.t1{
+    font-size: 45px;
+}
+.imagen{
+    width: 100%;
+    height: auto;
+}
+.logo{
+    width: 100px ;
+    height: 100px;
+    float: left;
+}
+.centrado{
+    text-align: center;
+}
+.ctitulo{
+    padding: 20px;
+    size: 23px;
+}
+header{
+    width: 100%;
+    background: #101010;;
+}
+#btn-menu{
+    display: none;
+}
+header label{
+    display: none;
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+    border-right: 1px solid #fff ;
+}
+header label :hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu li :hover{
+    background: rgba(236, 8, 8, 0.3);
+}
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color:#fff;
+    text-decoration: none;
+}
+main{
+    padding: 20px;
+}
+
+
+/*informacion de los servicios*/
+.informacion{
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+}
+.btnpedir{
+    text-align: center;
+    padding: 40px;
+}
+.btn1{
+    width: 100pxpx;
+    height: 50px;
+    padding: 20px;
+    background: #101010;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/* estilo para cuando se adapte a dispositivos mas pequeños menores a 780 pixeles*/
+@media (max-width:768px){
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        background: rgb(180, 178, 173);
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.8s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+    #btn-menu:checked ~ .menu{
+        margin:0;
+
+    }
+} /* Termina estilos de la barra de navegación y menu*/
+
+
